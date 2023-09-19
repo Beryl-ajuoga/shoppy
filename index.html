@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Shopping Cart</h1>
+        <h2>Explore Products</h2>
+    </header>
+    <main class="products">
+        <div class="product">
+            <img class="product-img" src="/images/product-1.avif" alt="Cream">
+            <h2>Dove Body Cream</h2>
+            <p>Price: Ksh1,000.00</p>
+            <button onclick="addToCart('Cream')">Add to Cart</button>
+
+        </div>
+        <div class="product">
+            <img class="product-img" src="/images/product-2.avif" alt="Sneakers Shoes">
+            <h2>Sneakers Shoes</h2>
+            <p>Price: Ksh1,500.00</p>
+            <button onclick="addToCart('Sneaker')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img class="product-img" src="/images/product-3.avif" alt="Women High Heels">
+            <h2>Women High Heels</h2>
+            <p>Price: Ksh1,500.00</p>
+            <button onclick="addToCart('heels')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img class="product-img" src="/images/product-4.avif" alt="Backyard-Watch">
+            <h2>Backyard-Watch</h2>
+            <p>Price: Ksh2,000.00</p>
+            <button onclick="addToCart('watch')">Add to Cart</button>
+
+        </div>
+        <div class="product">
+            <img class="product-img" src="/images/product-6.avif" alt="iPad">
+            <h2>iPad</h2>
+            <p>Price: Ksh20,000.00</p>
+            <button onclick="addToCart('iPad')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img class="product-img" src="/images/product-7.avif" alt="Bottle">
+            <h2>Bottle</h2>
+            <p>Price: Ksh700.00</p>
+            <button onclick="addToCart('bottle')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img class="product-img" src="/images/product-8.avif" alt="Drinking-water">
+            <h2>Drinking-water</h2>
+            <p>Price: Ksh50.00</p>
+            <button onclick="addToCart('drinking-water')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img class="product-img" src="/images/product-9.avif" alt="Camera">
+            <h2>Camera</h2>
+            <p>Price: Ksh17,500.00</p>
+            <button onclick="addToCart('camera')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img class="product-img" src="/images/product-10.avif" alt="Pepsi">
+            <h2>Pepsi</h2>
+            <p>Price: Ksh200.00</p>
+            <button onclick="addToCart('pepsi')">Add to Cart</button>
+        </div>
+
+    </main>
+    <aside class="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items">
+        </ul>
+        <p>Total: <span id="cart-total">Ksh0.00</span></p>
+        <button id="checkout-btn">Checkout</button>
+        <div id="cart-item-count">0</div>
+    </aside>
+    <script src="main.js"></script>
+</body>
+
+</html>
